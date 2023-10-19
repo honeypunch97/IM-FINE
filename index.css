@@ -1,0 +1,306 @@
+/* Reset css{ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol,
+ul {
+   list-style: none;
+}
+blockquote,
+q {
+   quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+a {
+   text-decoration: none;
+}
+* {
+   font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* }Reset css */
+
+#wrap {
+   width: 1080px;
+   margin: auto;
+   position: relative;
+   padding-top: 100px;
+}
+header {
+   width: 100%;
+   height: 100px;
+   font-size: 20px;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   position: fixed;
+   z-index: 100;
+   left: 0;
+   top: 0;
+   background-color: #dcdcdc;
+}
+section {
+   padding: 50px 0;
+   box-sizing: border-box;
+}
+section h2 {
+   font-size: 24px;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+.graph-section {
+}
+.graph-section .graph-container {
+   height: 500px;
+   background-color: lightgray;
+   padding: 40px;
+   box-sizing: border-box;
+}
+.graph-section .graph-container .graph {
+   height: 100%;
+   border-left: 4px solid black;
+   border-bottom: 4px solid black;
+   position: relative;
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-end;
+   margin-bottom: 5px;
+}
+.graph-section .graph-container .graph::before {
+   content: '0';
+   position: absolute;
+   left: -20px;
+   bottom: -10px;
+   font-weight: 700;
+}
+.graph-section .graph-container .graph::after {
+   content: '100';
+   position: absolute;
+   left: -35px;
+   top: 0px;
+   font-weight: 700;
+}
+.graph-section .graph-container .graph li {
+   width: 100px;
+   height: 100%;
+   background-color: gray;
+   margin-left: 5px;
+}
+.graph-section .graph-container .id {
+   margin-left: 4px;
+   display: flex;
+   justify-content: space-around;
+}
+.graph-section .graph-container .id li {
+   width: 100px;
+   margin-left: 5px;
+   text-align: center;
+
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+.edit-section {
+}
+.edit-section table {
+   width: 100%;
+   margin-bottom: 20px;
+}
+.edit-section table .w40 {
+   width: 40%;
+}
+.edit-section table .w20 {
+   width: 20%;
+}
+.edit-section table th,
+.edit-section table td {
+   text-align: center;
+   padding: 5px 0;
+}
+
+.edit-section table thead tr th {
+   font-weight: 700;
+   background-color: gray;
+   color: #fff;
+}
+
+.edit-section table tbody tr:nth-child(odd) td {
+   background-color: #dcdcdc;
+}
+.edit-section table tbody tr:nth-child(even) td {
+   background-color: #ededed;
+}
+.edit-section table tbody td input {
+   text-align: center;
+   box-sizing: border-box;
+   background-color: transparent;
+   border: none;
+}
+.edit-section table tbody td input::-webkit-inner-spin-button,
+.edit-section table tbody td input::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   appearance: none;
+   margin: 0;
+}
+.edit-section table tbody td button {
+   color: red;
+   font-weight: 700;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+.edit-section .btn-wrap {
+   text-align: right;
+}
+.edit-section .btn-wrap button {
+   cursor: pointer;
+}
+.add-section {
+}
+.add-section form {
+   display: flex;
+   justify-content: center;
+}
+.add-section form input {
+   width: 40%;
+   height: 35px;
+   margin-right: 10px;
+   box-sizing: border-box;
+}
+.add-section form .addBtn {
+   width: 15%;
+   height: 35px;
+   cursor: pointer;
+}
+.advanced-edit-section {
+}
+.advanced-edit-section textarea {
+   width: 100%;
+   height: 400px;
+   resize: none;
+   margin-bottom: 20px;
+}
+.advanced-edit-section .btn-wrap {
+   text-align: right;
+}
+.advanced-edit-section .applyBtn {
+   cursor: pointer;
+}

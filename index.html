@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>SD팀 지원자 정종우</title>
+      <link rel="stylesheet" href="./index.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
+   </head>
+   <body>
+      <div id="wrap">
+         <header>아이엠파인 SD팀 지원자 정종우</header>
+         <main>
+            <section class="graph-section">
+               <h2>1. 그래프</h2>
+               <div class="graph-container">
+                  <ul class="graph"></ul>
+                  <ul class="id"></ul>
+               </div>
+            </section>
+            <section class="edit-section">
+               <h2>2. 값 편집</h2>
+               <form>
+                  <table>
+                     <colgroup>
+                        <col class="w40" />
+                        <col class="w40" />
+                        <col class="w20" />
+                     </colgroup>
+                     <thead>
+                        <tr>
+                           <th>ID</th>
+                           <th>값</th>
+                           <th></th>
+                        </tr>
+                     </thead>
+                     <tbody></tbody>
+                  </table>
+                  <div class="btn-wrap">
+                     <button>Apply</button>
+                  </div>
+               </form>
+            </section>
+            <section class="add-section">
+               <h2>3. 값 추가</h2>
+               <form>
+                  <input type="text" id="textId" placeholder="ID" required />
+                  <input type="number" id="textValue" placeholder="VALUE (0 ~ 100)" min="0" max="100" required />
+                  <button class="addBtn">Add</button>
+               </form>
+            </section>
+            <section class="advanced-edit-section">
+               <h2>4. 값 고급 편집</h2>
+               <textarea></textarea>
+               <div class="btn-wrap">
+                  <button class="applyBtn">Apply</button>
+               </div>
+            </section>
+         </main>
+      </div>
+
+      <script src="./main.js"></script>
+   </body>
+</html>
